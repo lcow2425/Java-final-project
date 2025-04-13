@@ -16,7 +16,7 @@ public class MovieController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("movies", movieService.getTrendingMovies());
-        return "index";
+        return "test";
     }
 
     @GetMapping("/search")
